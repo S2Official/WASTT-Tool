@@ -1,3 +1,4 @@
+
 # 🌐 WASTT — Web Application Security Testing Tool
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
@@ -13,26 +14,16 @@ With a range of powerful testing modules, WASTT helps identify vulnerabilities l
 
 ## 🚀 Features
 
-- 🔎 **SQL Injection Testing**  
-  • Scans for potential SQL Injection vulnerabilities where malicious queries could compromise your web app's backend.
+- 🔎 **SQL Injection Testing (GET & POST)**  
+  • Scans for potential SQL Injection vulnerabilities in both GET and POST request methods.
 
-- ⚡ **Cross-Site Scripting (XSS) Detection** *(In Progress)*  
-  • Upcoming feature to identify XSS vulnerabilities that allow attackers to inject malicious scripts.
+- ⚡ **Cross-Site Scripting (XSS) Detection**  
+  • Identifies potential XSS vulnerabilities, allowing attackers to inject malicious scripts.
 
 - 🗂️ **Directory Brute Force**  
   • Brute-forces common directories and file paths to uncover hidden endpoints or sensitive resources.
 
-- 🛠️ **CMS Detection**  
-  • Identifies if the target uses popular CMS platforms (WordPress, Joomla, etc.) for CMS-specific vulnerability checks.
-
-- 🛡️ **Security Header Analysis**  
-  • Checks for important HTTP security headers such as:
-    - `Strict-Transport-Security`
-    - `X-Content-Type-Options`
-    - `X-Frame-Options`
-    - And more.
-
-- 🧱 **WAF (Web Application Firewall) Detection**  
+- 🛡️ **Web Application Firewall (WAF) Detection**  
   • Attempts to detect the presence of a WAF protecting the application.
 
 ---
@@ -40,8 +31,8 @@ With a range of powerful testing modules, WASTT helps identify vulnerabilities l
 ## 📥 Installation
 
 **Requirements**  
-- Python 3.x
-- `requests`, `socket`, and other supporting libraries.
+- Python 3.12 or higher
+- `requests` and `termcolor` libraries
 
 **Quick Setup**
 
@@ -61,19 +52,18 @@ python wastt.py
 
 ## 🛠️ Usage
 
-After launching, you'll be greeted with an interactive menu:
+After launching the tool, you'll be greeted with an interactive menu:
 
 ```plaintext
 Welcome to WASTT - Web Application Security Testing Tool!
 
 Choose an option:
-[1] Test for SQL Injection
-[2] Test for XSS (Cross-Site Scripting)
-[3] Directory Brute Force
-[4] Detect CMS (WordPress, Joomla, etc.)
-[5] Check for Security Headers
-[6] Detect WAF (Web Application Firewall)
-[7] Exit
+[1] Test SQL Injection (GET)
+[2] Test SQL Injection (POST)
+[3] Test XSS
+[4] Directory Bruteforce
+[5] Detect WAF
+[0] Exit
 ```
 
 Simply select the desired test and input the target URL or IP address when prompted.
